@@ -37,3 +37,8 @@ docker rm mysql
  -v /c/Users/googo/docker/mysql/conf:/etc/mysql/conf.d \
  -e MYSQL_ROOT_PASSWORD=123456 -d mysql
 ```
+
+## Exec into mysql bash
+```sh
+docker exec -it mysql /bin/bash
+```
