@@ -30,6 +30,7 @@ docker rm mysql
 ## Re-run docker image to generate the docker container with volume mount
 ```sh
  docker run -p 3306:3306 --name mysql \
+ --restart=always \
  -v /c/Users/googo/docker/mysql/mysql-files:/var/lib/mysql-files \
  -v /c/Users/googo/docker/mysql/log:/var/log/mysql \
  -v /c/Users/googo/docker/mysql/data:/var/lib/mysql \
