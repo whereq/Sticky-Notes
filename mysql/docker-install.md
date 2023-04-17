@@ -42,3 +42,8 @@ docker rm mysql
 ```sh
 docker exec -it mysql /bin/bash
 ```
+
+## Run next time if mysql docker is down
+```sh
+docker run mysql
+```
